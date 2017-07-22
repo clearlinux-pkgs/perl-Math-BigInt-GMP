@@ -4,7 +4,7 @@
 #
 Name     : perl-Math-BigInt-GMP
 Version  : 1.6004
-Release  : 3
+Release  : 4
 URL      : http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6004.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6004.tar.gz
 Summary  : unknown
