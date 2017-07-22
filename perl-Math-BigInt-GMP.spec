@@ -4,7 +4,7 @@
 #
 Name     : perl-Math-BigInt-GMP
 Version  : 1.6004
-Release  : 1
+Release  : 2
 URL      : http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6004.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6004.tar.gz
 Summary  : unknown
@@ -13,9 +13,11 @@ License  : Artistic-1.0-Perl
 Requires: perl-Math-BigInt-GMP-lib
 Requires: perl-Math-BigInt-GMP-doc
 Requires: gmp-lib-hsw
+Requires: perl-Math-BigInt-FastCalc
 BuildRequires : gmp-dev
 BuildRequires : gmp-gmpxx
 BuildRequires : gmp-lib-hsw
+BuildRequires : perl-Math-BigInt-FastCalc
 
 %description
 Math-BigInt-GMP

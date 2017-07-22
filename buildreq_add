@@ -3,3 +3,4 @@
 gmp-lib-hsw
 gmp-gmpxx
 gmp-dev
+perl-Math-BigInt-FastCalc
