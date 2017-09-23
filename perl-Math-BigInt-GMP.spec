@@ -4,7 +4,7 @@
 #
 Name     : perl-Math-BigInt-GMP
 Version  : 1.6004
-Release  : 4
+Release  : 5
 URL      : http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6004.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6004.tar.gz
 Summary  : unknown
@@ -70,7 +70,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.0/x86_64-linux-thread-multi/Math/BigInt/GMP.pm
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/Math/BigInt/GMP.pm
 
 %files doc
 %defattr(-,root,root,-)
@@ -78,4 +78,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.0/x86_64-linux-thread-multi/auto/Math/BigInt/GMP/GMP.so
+/usr/lib/perl5/site_perl/5.26.1/x86_64-linux-thread-multi/auto/Math/BigInt/GMP/GMP.so
