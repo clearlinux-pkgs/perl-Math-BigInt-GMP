@@ -1,5 +1,5 @@
 PKG_NAME := perl-Math-BigInt-GMP
-URL = http://search.cpan.org/CPAN/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6005.tar.gz
+URL = https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6006.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
