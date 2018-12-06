@@ -73,7 +73,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1x86_64-linux-thread-multi/Math/BigInt/GMP.pm
+/usr/lib/perl5/vendor_perl/5.28.1/x86_64-linux-thread-multi/Math/BigInt/GMP.pm
 
 %files dev
 %defattr(-,root,root,-)
@@ -81,4 +81,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.1x86_64-linux-thread-multi/auto/Math/BigInt/GMP/GMP.so
+/usr/lib/perl5/vendor_perl/5.28.1/x86_64-linux-thread-multi/auto/Math/BigInt/GMP/GMP.so
