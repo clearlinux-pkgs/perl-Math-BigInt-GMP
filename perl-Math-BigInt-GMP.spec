@@ -4,10 +4,10 @@
 #
 Name     : perl-Math-BigInt-GMP
 Version  : 1.6006
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6006.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6006.tar.gz
-Summary  : unknown
+Summary  : Math::BigInt::GMP - backend library for Math::BigInt etc. based on GMP
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 Requires: perl-Math-BigInt-GMP-lib = %{version}-%{release}
@@ -30,6 +30,7 @@ Summary: dev components for the perl-Math-BigInt-GMP package.
 Group: Development
 Requires: perl-Math-BigInt-GMP-lib = %{version}-%{release}
 Provides: perl-Math-BigInt-GMP-devel = %{version}-%{release}
+Requires: perl-Math-BigInt-GMP = %{version}-%{release}
 
 %description dev
 dev components for the perl-Math-BigInt-GMP package.
