@@ -4,13 +4,13 @@
 #
 Name     : perl-Math-BigInt-GMP
 Version  : 1.6007
-Release  : 20
+Release  : 21
 URL      : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6007.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6007.tar.gz
-Summary  : Math::BigInt::GMP - backend library for Math::BigInt etc. based on GMP
+Summary  : unknown
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
-Requires: perl-Math-BigInt-GMP-lib = %{version}-%{release}
+Requires: perl-Math-BigInt-GMP-perl = %{version}-%{release}
 Requires: gmp-lib
 Requires: gmp-lib-hsw
 BuildRequires : buildreq-cpan
@@ -28,25 +28,25 @@ via:
 %package dev
 Summary: dev components for the perl-Math-BigInt-GMP package.
 Group: Development
-Requires: perl-Math-BigInt-GMP-lib = %{version}-%{release}
 Provides: perl-Math-BigInt-GMP-devel = %{version}-%{release}
-Requires: perl-Math-BigInt-GMP = %{version}-%{release}
 Requires: perl-Math-BigInt-GMP = %{version}-%{release}
 
 %description dev
 dev components for the perl-Math-BigInt-GMP package.
 
 
-%package lib
-Summary: lib components for the perl-Math-BigInt-GMP package.
-Group: Libraries
+%package perl
+Summary: perl components for the perl-Math-BigInt-GMP package.
+Group: Default
+Requires: perl-Math-BigInt-GMP = %{version}-%{release}
 
-%description lib
-lib components for the perl-Math-BigInt-GMP package.
+%description perl
+perl components for the perl-Math-BigInt-GMP package.
 
 
 %prep
 %setup -q -n Math-BigInt-GMP-1.6007
+cd %{_builddir}/Math-BigInt-GMP-1.6007
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -75,12 +75,12 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/Math/BigInt/GMP.pm
 
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/Math::BigInt::GMP.3
 
-%files lib
+%files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/Math/BigInt/GMP/GMP.so
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/Math/BigInt/GMP.pm
+/usr/lib/perl5/vendor_perl/5.30.1/x86_64-linux-thread-multi/auto/Math/BigInt/GMP/GMP.so
