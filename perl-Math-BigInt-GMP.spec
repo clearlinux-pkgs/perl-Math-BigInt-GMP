@@ -4,10 +4,10 @@
 # Using build pattern: cpan
 #
 Name     : perl-Math-BigInt-GMP
-Version  : 1.6012
-Release  : 38
-URL      : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6012.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6012.tar.gz
+Version  : 1.6013
+Release  : 39
+URL      : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6013.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.6013.tar.gz
 Summary  : unknown
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -48,8 +48,11 @@ perl components for the perl-Math-BigInt-GMP package.
 
 
 %prep
-%setup -q -n Math-BigInt-GMP-1.6012
-cd %{_builddir}/Math-BigInt-GMP-1.6012
+%setup -q -n Math-BigInt-GMP-1.6013
+cd %{_builddir}/Math-BigInt-GMP-1.6013
+pushd ..
+cp -a Math-BigInt-GMP-1.6013 buildavx2
+popd
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -75,6 +78,7 @@ find %{buildroot} -type f -name .packlist -exec rm -f {} ';'
 find %{buildroot} -depth -type d -exec rmdir {} 2>/dev/null ';'
 find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %{_fixperms} %{buildroot}/*
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
