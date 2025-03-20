@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : perl-Math-BigInt-GMP
-Version  : 1.7001
-Release  : 47
-URL      : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.7001.tar.gz
-Source0  : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.7001.tar.gz
+Version  : 1.7002
+Release  : 48
+URL      : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.7002.tar.gz
+Source0  : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.7002.tar.gz
 Summary  : unknown
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
@@ -50,13 +50,13 @@ perl components for the perl-Math-BigInt-GMP package.
 
 
 %prep
-%setup -q -n Math-BigInt-GMP-1.7001
-cd %{_builddir}/Math-BigInt-GMP-1.7001
+%setup -q -n Math-BigInt-GMP-1.7002
+cd %{_builddir}/Math-BigInt-GMP-1.7002
 pushd ..
-cp -a Math-BigInt-GMP-1.7001 buildavx2
+cp -a Math-BigInt-GMP-1.7002 buildavx2
 popd
 pushd ..
-cp -a Math-BigInt-GMP-1.7001 buildapx
+cp -a Math-BigInt-GMP-1.7002 buildapx
 popd
 
 %build
