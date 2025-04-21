@@ -7,7 +7,7 @@
 #
 Name     : perl-Math-BigInt-GMP
 Version  : 1.7003
-Release  : 49
+Release  : 50
 URL      : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.7003.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PJ/PJACKLAM/Math-BigInt-GMP-1.7003.tar.gz
 Summary  : unknown
